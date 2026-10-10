@@ -1,76 +1,138 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Funny and Relatable Comics</title>
-    <meta name="description" content="Discover funny and relatable comics.">
+    <title>These Hilarious Comics Capture Life’s Most Relatable And Quirky Moments (20 New Pics)</title>
 
+    <meta name="description" content="Discover hilarious comics capturing life's most relatable and quirky moments.">
+
+    <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Funny and Relatable Comics">
-    <meta property="og:description" content="Discover funny and relatable comics.">
+    <meta property="og:title" content="These Hilarious Comics Capture Life’s Most Relatable And Quirky Moments (20 New Pics)">
+    <meta property="og:description" content="Discover hilarious comics capturing life's most relatable and quirky moments.">
     <meta property="og:site_name" content="Sweet Animals">
+    <meta property="article:section" content="Animal">
     <meta property="og:image" content="https://gocomicss.netlify.app/posts/oc14.jpg">
+    <meta property="og:image:alt" content="Funny and relatable comics">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 40px 20px;
-            line-height: 1.6;
-        }
-
-        a {
-            display: inline-block;
-            padding: 14px 22px;
-            background: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
-    </style>
-
+    <!-- Pinterest Redirect -->
     <script>
     (function () {
         try {
+            var params = new URLSearchParams(window.location.search);
+
+            var source = (
+                params.get("utm_source") || ""
+            ).toLowerCase();
+
             var referrer = document.referrer;
+            var isPinterest = source === "pinterest";
 
-            if (!referrer) return;
+            if (referrer) {
+                var host = new URL(referrer).hostname.toLowerCase();
 
-            var host = new URL(referrer).hostname.toLowerCase();
-
-            var isPinterest =
-                host === "pinterest.com" ||
-                host.endsWith(".pinterest.com") ||
-                host === "pin.it" ||
-                host.endsWith(".pin.it") ||
-                host === "pinterest.co.uk" ||
-                host.endsWith(".pinterest.co.uk");
+                if (
+                    host === "pinterest.com" ||
+                    host.endsWith(".pinterest.com") ||
+                    host === "pin.it" ||
+                    host.endsWith(".pin.it") ||
+                    host === "pinterest.co.uk" ||
+                    host.endsWith(".pinterest.co.uk")
+                ) {
+                    isPinterest = true;
+                }
+            }
 
             if (isPinterest) {
                 window.location.replace(
                     "https://onlinecomics.us/kampingchicken/"
                 );
             }
-        } catch (e) {
-            console.error("Redirect error:", e);
+        } catch (error) {
+            console.error("Pinterest redirect error:", error);
         }
     })();
     </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px 16px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #fff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            padding: 14px 16px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background: #111;
+        }
+
+        .active {
+            background: #4CAF50;
+        }
+
+        .continue-link {
+            display: inline-block;
+            padding: 12px 20px;
+            color: #fff;
+            background: #333;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Funny and Relatable Comics</h1>
+    <main>
+        <h1>These Hilarious Comics Capture Life’s Most Relatable And Quirky Moments</h1>
 
-    <p>Explore our collection of funny and relatable moments.</p>
+        <p>Discover funny comics and relatable moments.</p>
 
-    <p>If you are not redirected automatically, click below.</p>
+        <p>If you are not redirected automatically, use the link below.</p>
 
-    <a href="https://onlinecomics.us/kampingchicken/">
-        Continue to Website
-    </a>
+        <a class="continue-link"
+           href="https://onlinecomics.us/kampingchicken/">
+            Continue to Website
+        </a>
+    </main>
 </body>
 </html>
